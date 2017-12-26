@@ -22,23 +22,23 @@ body {
 }
 
 ::selection {
-    background:#ff5252;
+    background:#1e1eff;
     color: #FFF;
     text-shadow: none;
 }
 ::-moz-selection {
-    background:#ff5252;
+    background:#1e1eff;
     color: #FFF;
     text-shadow: none;
 }
 ::-webkit-selection {
-    background:#ff5252;
+    background:#1e1eff;
     color: #FFF;
     text-shadow: none;
 }
 
 #top, #bottom, #left, #right {
-	background-color:#ff5252;
+	background-color:#1e1eff;
 	position: fixed;
 	z-index:999;
 }
@@ -119,11 +119,11 @@ div.resume-content ul{
  }
 
  .list-social-icons a{
- 	color:#ff5252;
- 	opacity:0.3;
+ 	color:#333;
+ 	opacity:1;
  }
  .list-social-icons a:hover{
- 	color:#ff5252;
+ 	color:#1e1eff;
  	opacity:1;
  	background-color:transparent;
  }
@@ -147,7 +147,7 @@ div.resume-content ul{
 
 span.skillset{
 	font-size:0.8rem;
-	color:#ff5252;
+	color:#1e1eff;
 	padding:0.1rem 0.5rem;
 	margin: 0.5rem 0 !important;
 }
@@ -171,12 +171,10 @@ div.clients a:hover{
 .mr-auto, .mx-auto {
 	width:100%;
 }
-.text-warning {
-    color: #ff5252 !important;
-}
+
 #sideNav{
 	z-index:998;
-	border-right:1px solid #ff5252;
+	border-right:0px solid #1e1eff;
 }
 #sideNav .d-none{
 	margin-top:1.45rem;
@@ -196,12 +194,21 @@ div.clients a:hover{
 	background-color: transparent;
 }
 
-#sideNav .navbar-brand .img-profile {
-	filter:grayscale(100%);
+@media (min-width:768px) {
+	#sideNav .navbar-nav .nav-item .nav-link { 
+ 		color:white !important;
+	}
 }
 
-#sideNav .navbar-brand .img-profile:hover {
-	filter:grayscale(50%);
+#sideNav .navbar-brand .img-profile{
+	filter:grayscale(0%);
+	opacity:0.8;
+}
+
+#sideNav .navbar-brand .img-profile:hover{
+	filter:grayscale(0%);
+	background-color:#fff;
+	border:1px solid #dee2e6;
 }
 
 @media (min-width:992px) {
@@ -221,9 +228,13 @@ div.clients a:hover{
 	 	padding:.5rem
 	}
 	#sideNav .navbar-brand .img-profile {
-	 	max-width:10rem;
-	 	max-height:10rem;
-	 	border:.5rem solid rgba(255,255,255,.2)
+	 	max-width:4.5rem;
+	 	max-height:4.5rem;
+	 	padding:0.7rem 0.5rem 0 0.5rem;
+	 	border:1px solid #dee2e6;
+	}
+	#sideNav .navbar-brand .img-profile.rounded-circle {
+	    border-radius: 5%!important;
 	}
 	#sideNav .navbar-collapse {
 	 	display:flex;
@@ -269,7 +280,11 @@ section.resume-section .resume-item .resume-date {
 
 }
 .footer {
+	position:absolute;
 	font-size: 0.5rem;
+	right:0;
+	bottom:0;
+	margin-right:0.3rem;
 	margin-bottom: 0.2rem;
 	color: #929393;
 	font-weight: 400;
@@ -286,11 +301,39 @@ section.resume-section .resume-item .resume-date {
 
 
 .bg-primary {
- 	background-color:#f8fafc !important;
- 	}
+ 	background-color:#f5f5f5 !important;
+}
+@media (min-width:768px) {
+	.bg-primary {
+		background-color:#1e1eff !important;
+	}
+	.img-profile-m {
+		height:1.5rem;
+		width:1.5rem;
+		margin-right:0.3rem;
+		margin-bottom:0.3rem;
+	}
+	span.d-block{
+		font-weight:900;
+		letter-spacing:0.2rem;
+	}
+	.navbar-collapse{
+		padding:0 2rem 2rem 2rem;
+	}
+	.navbar-dark .navbar-toggler-icon{
+		background-image:none;
+		background-image:;
+	}
+	.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,0);
+    border-color: rgba(255,255,255,0);
+	}
+	.navbar-toggler {
+		padding:.25rem .5rem !important;
+	}
+}
 .text-primary {
- 	color: #F8FAFC !important;
-	-webkit-text-stroke: 1px #ff5252;
+ 	color: #343a40 !important;
 	letter-spacing:0.3rem;
 }
 
@@ -299,14 +342,26 @@ section.resume-section .resume-item .resume-date {
  	font-weight:100;
  }
 
- a {
+a {
  	color:#010101;
  	}
 a:hover {
  	color:#010101;
  	background-color:#eaeaea;
+ 	cursor:pointer;
  }
  a.active {
  	color:#010101;
  	font-weight:700 !important;
  }
+
+
+/*Shared*/
+
+@media (min-width:768px) {
+	.p-0 section {padding:5% !important;}
+
+}
+
+
+
