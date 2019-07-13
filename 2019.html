@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en, ko">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blockchain+Data+Challenge+2019</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Roboto+Mono:100,300i,300,400,500" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top" style="overflow-x:hidden">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand header-logo js-scroll-trigger" href="#page-top">
+           <!--img class="" src="img/logo_head.png" href=""-->
+
+<svg viewBox="0 0 88 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="LYZE-Challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" fill="#EEFF41">
+            <path d="M59.75,15.828711 C59.75,13.4424177 60.1730414,11.2802351 61.0187003,9.34342932 C61.8647831,7.40577943 63.0211528,5.7500616 64.4873855,4.37374352 C65.9531943,2.9986916 67.6805427,1.93849196 69.6681591,1.19441077 C71.6566233,0.450751625 73.7777647,0.0785 76.0341269,0.0785 C78.3460185,0.0785 80.5311672,0.450751625 82.589997,1.19441077 C84.647979,1.93849196 86.3681213,2.94171431 87.75,4.20534397 L77.6321891,15.5429805 C77.0675687,14.8132491 87.75,27.1570623 87.75,27.1570623 C86.3960979,28.5046807 84.7327568,29.5783861 82.7591288,30.3786005 C80.7850768,31.1788149 78.5435508,31.5785 76.0341269,31.5785 C73.7777647,31.5785 71.6566233,31.1994955 69.6681591,30.4419086 C67.6805427,29.6838996 65.9531943,28.6097722 64.4873855,27.2199484 C63.0211528,25.8305466 61.8647831,24.1739847 61.0187003,22.2506846 C60.1730414,20.3282287 59.75,18.1867267 59.75,15.828711" id="Fill-6"></path>
+            <path d="M30.25,30.5785 L30.25,1.0785 L39.8427067,1.0785 C41.8779167,1.0785 43.8218354,1.30775189 45.6753003,1.76625568 C47.5283464,2.22475947 49.1636334,3.0160752 50.5807426,4.14103804 C51.9978517,5.26641847 53.1297802,6.75968763 53.9782032,8.62042795 C54.8262073,10.4815859 55.25,12.8288079 55.25,15.662094 C55.25,18.2452492 54.8437955,20.4818123 54.0326429,22.3705306 C53.2210715,24.2596664 52.1373013,25.8080562 50.7804946,27.0161177 C49.4232692,28.2241791 47.8612665,29.1203076 46.0932302,29.7036681 C44.3243564,30.2870286 42.4830357,30.5785 40.5696871,30.5785 L30.25,30.5785 Z" id="Fill-4"></path>
+            <path d="M0.25,1.0785 L13.9077807,1.0785 C15.3905967,1.0785 16.74701,1.24845541 17.9778606,1.58711349 C19.2078714,1.92618915 20.2610865,2.42728618 21.1358261,3.09082217 C22.0101458,3.75435816 22.692132,4.57991553 23.1817846,5.56749427 C23.6705973,6.55549059 23.9158436,7.71260716 23.9158436,9.03926155 C23.9158436,9.98341188 23.7969999,10.7864199 23.5597326,11.4495383 C23.3220453,12.1130743 23.0709198,12.6659513 22.8038366,13.1085871 C22.4775415,13.6393323 22.1067325,14.0815505 21.6918296,14.4352415 C22.3435799,14.8482289 22.9369583,15.3793918 23.4707048,16.0274773 C23.9158436,16.5878708 24.3227676,17.2952528 24.6944164,18.1504584 C25.0643855,19.0060816 25.25,20.0521216 25.25,21.2906665 C25.25,22.705848 24.9976147,23.9882388 24.494104,25.1382565 C23.9889135,26.2882742 23.2708123,27.2687541 22.3368608,28.0796961 C21.4024894,28.8910557 20.2610865,29.5099106 18.9118121,29.9370958 C17.5625378,30.3646986 16.0578848,30.5785 14.3974333,30.5785 L0.25,30.5785 L0.25,1.0785 Z" id="Fill-8"></path>
+        </g>
+    </g>
+</svg>
+        </a> 
+
+            <a class="header-title" href="#">
+                BLOCKCHAIN+2019<br><font style="font-size:16px;">DATA+CHALLENGE</font>
+            </a>
+
+    
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="" src="img/bg_menu.png" href="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#rules">RULES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#event">EVENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors">SPONSORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+            </li>
+            <!--li class="blank"></li>
+            <li class="nav-item language en">
+              <a class="nav-link" href="#en" data-reload>EN</a>
+            </li>
+            <li class="nav-item language">
+              <a class="nav-link" href="#ko" data-reload>KR</a>
+            </li>
+            <li class="nav-item language">
+              <a class="nav-link">CN</a>
+            </li-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Blockchain Data<br>Challenge</h1>
+          <!--h2 class="text-white-80 mx-auto mt-2 mb-5">On-chain data analysis leads to a correct investment decision making process</h2-->
+           <h2 lang="ko" class="text-white mx-auto mt-5 mb-5">탈중앙화 투자정보 플랫폼 LYZE에서 제공하는 <br style="display:none">915만건 이상의 온체인 데이터와 함께<br>제1회 BDC Challenge를 개최합니다</h2>
+          <a href="https://goo.gl/forms/TZbleccTGCBGI6cg1" class="btn btn-primary js-scroll-trigger" target="__blank"><i class="fas fa-code"></i>REGISTER</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">Challenge Overview</h2>
+          </div>
+          <div class="col-lg-4">
+            <h5 lang="ko">접수 기간</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">2019년 01월 08일 ~ 2019년 02월 11일</p>
+          </div>
+          <div class="col-lg-4">
+            <h5 lang="ko">분석 주제</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">블록체인 프로젝트의 생태계를 다양한 시각으로 분석</p>
+          </div>
+          <div class="col-lg-4">
+            <h5 lang="ko">수상 내역</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">총 1,000만원 상당의 LZE Token<br>및 LYZE 객원분석가 기회</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 mx-auto mb-3">
+            <h3 class="text-rr">Our Message</h3>
+          </div>
+          <div class="col-12 col-md-9 mx-auto">
+            <p lang="ko" class="text-white-80" style="text-align:left;">현재 암호화폐 투자 시장은 수많은 코인(토큰)들이 객관적인 자료나 정보들이 결여된 채, 가격이 형성되어 거래되고 있습니다. 암호화폐 시장의 신뢰도와 객관성을 보장하는 것은 프로젝트들의 가치를 올바르게 판단하는 것에서부터 시작합니다. 
+            <br><br>LYZE는 암호화폐 투자 시장에 보다 객관적이고 신뢰할 수 있는 투자 정보를 제공하여 투자 시장을 투명하게 만드는 것에 도움이 되고자 제1회 LYZE 리서치 챌린지를 개최합니다.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 mx-auto mb-3">
+            <h3 class="text-rr">What is LYZE?</h3>
+          </div>
+          <div class="col-12 col-md-9 mx-auto">
+            <p lang="ko" class="text-white-80" style="text-align:left;">LYZE는 데이터 사이언티스트와 퀀트 애널리스트, 그리고 커뮤니티 회원들의 집단 지성의 힘으로 운영되는 탈중앙화 투자정보 플랫폼입니다.
+            <br><br> 검증/재현이 가능한 객관적인 데이터 분석 기반의 퀀트 리서치, 온체인 데이터 리서치를 통해 시장 참여자들이 보다 객관적인 투자 의사 결정을 할 수 있도록 돕고, 보다 건전한 암호화폐 투자시장의 조성에 기여합니다.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 mx-auto mb-3">
+            <h3 class="text-rr">Our Goals</h3>
+          </div>
+          <div class="col-12 col-md-3 mx-auto">
+            <h5 lang="ko" style="text-align:left;">전문가 커뮤니티 빌딩</h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">챌린지에 참가한 데이터 분석가들은 지속적으로 LYZE Research와 함께 LYZE Platform에서의 분석 콘텐츠를 생산하는 사용자이자 객원 분석가로 활동하게 됩니다.</p>
+          </div>
+          <div class="col-12 col-md-3 mx-auto">
+            <h5 lang="ko" style="text-align:left;">데이터 분석 고도화</h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">챌린지에서 제안된 결과물들은 LYZE Research와 함께 더욱 다양하고 심층적인 주제와 접근방식을 더해, 보다 전문성과 상품성을 지닌 데이터 분석 콘텐츠로 발전됩니다.</p>
+          </div>
+          <div class="col-12 col-md-3 mx-auto">
+            <h5 lang="ko" style="text-align:left;">분석 콘텐츠 상품화</h5>
+              <p lang="ko" class="text-white-80 mt-2" style="text-align:left;">챌린지의 최종 결과물은 LYZE Team과의 협의를 거쳐 LYZE 플랫폼을 통해 '투자 분석 콘텐츠'로 발간될 기회를 얻습니다. LYZE Platform은 온체인 데이터와 관련된 ICO 프로젝트 및 블록체인 산업의 다양한 지표를 제시하는 콘텐츠 상품을 통해 발생하는 수익을 분석 기여자에게 보상으로 분배하여 상생하는 플랫폼을 지향합니다. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">Co-host & Organizer</h2>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="text-rr">Main host & Organizer</h3>
+            <img class="company-logo" src="img/logo_lyze.png" href="https://lyze.ai" target="__blank">
+            <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left">LYZE는 데이터 분석가와 금융 전문가, 그리고 커뮤니티 회원들의 참여로 이루어지는 탈중앙화된 투자 정보 플랫폼 입니다. <br><br>LYZE의 데이터 분석의 코어 역할을 하고 있는 LYZE Research에서 본 리서치 챌린지를 기획, 주최하여 온체인 데이터 분석 콘텐츠의 가치를 검증하는 기회를 마련하고자 합니다.</p>
+          </div>
+          <div class="col-l2 col-md-6">
+            <h3 class="text-rr">Co-host</h3>
+            <img class="company-logo" src="img/logo_FX.png" href="https://www.foundationx.io/" target="__blank">
+
+            <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left">Foundation X는 테크 액셀러레이터 퓨처플레이의 자회사로, 블록체인 기반의 스타트업을 보육하는 글로벌 블록체인 스타트업 액셀러레이터입니다. <br><br>
+            설립 단계부터 Foundation X가 포트폴리오 중 최초로 컴퍼니 빌더로 참여하고 있습니다.</p>
+          </div>
+          
+        </div>
+        <!--img src="img/ipad.png" class="img-fluid" alt=""-->
+      </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">Challenge Topics</h2>
+            <ul lang="ko" class="text-white-80 mx-auto mt-2 mb-5" style="max-width: 40rem;
+    text-align: left;">
+              <li class="mb-2"><font style="color:#eeff41;">LYZE Research 팀에서 제공하는 온체인 데이터</font>를 기본적으로 활용하여,블록체인 프로젝트를 평가 시 참고할 수 있는 다양한 데이터 분석 지표를<font style="color:#eeff41;"> 수익성, 접근성, 건강성</font> 관점에서 제안
+              </li>
+              <li class="mb-2"><font style="color:#eeff41;">ERC-20 TOP 30</font>(2018년 12월 30일 - Coinmarketcap 기준) 토큰들의 raw data와 가격 데이터, 1차 가공 데이터 제공.</li>
+              <li class="mb-2"><font style="color:#eeff41;">Token List:</font> BNB, MKR, USDC, TUSD, OMG, HT, ZIL, ZRX, BAT, PAX, LINK, INB, AE, GUSD, REP, R, PPT, MANA, BTM, AOA, GNT, NPXS, DAI, Dentacoin, MCO, SNT, IOST, HOT, BCZERO, VEN</li>
+              <li class="mb-2"><font style="color:#eeff41;">Data Size:</font> 1.83GB</li>
+              <li class="mb-2"><font style="color:#eeff41;">Data 건수:</font> 915만건 이상</li>
+              <li class="mb-2">추후 참가팀들과의 논의를 통해 데이터 추가 제공 가능</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mx-auto mb-6">
+            <h3 class="text-rr">Topic Types</h3>
+          </div>
+          <div class="col-12 col-md-4 mx-auto">
+            <h5 lang="ko" style="text-align:left;">Type A - 수익성</h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">프로젝트의 가치 평가와 관련된 평가/분석 지표 제안</p>
+          </div>
+          <div class="col-12 col-md-4 mx-auto">
+            <h5 lang="ko" style="text-align:left;">Type B - 접근성</h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">프로젝트의 각종 현황을 쉽게 이해할 수 있도록 도움을 주는 분석 방법론 제안</p>
+          </div>
+          <div class="col-12 col-md-4 mx-auto">
+            <h5 lang="ko" style="text-align:left;">Type C - 건강성</h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">프로젝트의 특이한 패턴(abnormal pattern detection)을 발견하고, 그 패턴이 프로젝트에 어떤 영향을 미치는지에 대한 분석 방법론 제안</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto mb-6">
+            <h3 class="text-rr">Judging Criteria</h3>
+          </div>
+          <div class="col-12 col-md-4 mx-auto mb-4">
+            <div class="col-12 px-0">
+              <h5 lang="ko">주제의 적합성</h5>
+              <h6 class="mb-4">Relevance</h6>
+            </div>
+            <div class="col-12 px-0" style="display:flex">
+              <h3 style="width:25%">40%</h3>
+              <p lang="ko" class="text-white-80" style="text-align:left;width:75%;">분석한 내용이 주어진 주제(수익성 / 건강성 / 접근성)에 적절히 부합하였는가</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mx-auto mb-4">
+            <div class="col-12 px-0">
+              <h5 lang="ko">신뢰성 / 재현성</h5>
+              <h6 class="mb-4">Credibility / Reproducibility</h6>
+            </div>
+            <div class="col-12 px-0" style="display:flex">
+              <h3 style="width:25%">40%</h3>
+              <p lang="ko" class="text-white-80" style="text-align:left;width:75%;">프로젝트 분석 방법이 객관적이고 지속적(재현 가능)인가</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mx-auto mb-4">
+            <div class="col-12 px-0">
+              <h5 lang="ko">효과적인 시각화</h5>
+              <h6 class="mb-4">Visualization</h6>
+            </div>
+            <div class="col-12 px-0" style="display:flex">
+              <h3 style="width:25%">20%</h3>
+              <p lang="ko" class="text-white-80" style="text-align:left;width:75%;">효과적인 시각화를 통해 데이터 분석결과의 이해가능성, 가독성을 향상시켰는가</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto mb-6">
+            <h3 class="text-rr">Judging Procedure</h3>
+          </div>
+          <div class="col-12 mx-auto mb-4" style="display:flex">
+          
+              <div class="col-dot-30">
+                <h5 lang="ko">사전 심사</h5>
+              </div>
+              <div class="col-dot-5">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="col-dot-30">
+                <h5 lang="ko">현장 심사</h5>
+              </div>
+              <div class="col-dot-5">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="col-dot-30">
+                <h5 lang="ko">수상 선정</h5>
+              </div>
+          </div>
+          <div class="col-12 mx-auto" style="display:flex">
+              <div class="col-4 ml-auto pl-0 mb-6">
+                <p lang="ko" class="text-white-80">
+                  피칭데이 이전 내부 심사를 거쳐,<br>입상 4팀 선별
+                </p>
+              </div>
+              <div class="col-4 px-0">
+                <p lang="ko" class="text-white-80">
+                  현장 발표로 심사위원 심사 (70%)<br>+ 현장 투표 (30%)
+                </p>
+              </div>
+              <div class="col-4 mr-auto pr-0">
+                <p lang="ko" class="text-white-80">
+                  현장 심사 결과에 따라<br>1위, 2위, 3위, LYZE상 수여
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto mb-6">
+            <h3 class="text-rr">Winner's Benefits</h3>
+          </div>
+          <div class="col-12 mx-auto">
+            <h5 lang="ko" class="mb-2">수상자 전원</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">
+                - LYZE Platform의 객원 분석가 자격 부여<br>
+                - 분석 콘텐츠 상품화 및 수익화 기회
+            </p>
+          </div>
+          <div class="col-6 mx-auto mb-4">
+            <h5 lang="ko" class="mb-2">1위</h5>
+            <h style="font-size:1.2rem">5,000,000KRW <font style="font-size:14px;color:rgba(255,255,255,0.8);text-align:right" lang="ko"><br>상당의 LZE Token</font></h6>
+          </div>
+          <div class="col-6 mx-auto mb-4">
+            <h5 lang="ko" class="mb-2">2위</h5>
+            <h6 style="font-size:1.2rem">3,000,000KRW <font style="font-size:14px;color:rgba(255,255,255,0.8);text-align:right" lang="ko"><br>상당의 LZE Token</font></h6>
+          </div>
+          <div class="col-6 mx-auto mb-4">
+            <h5 lang="ko" class="mb-2">3위</h5>
+            <h6 style="font-size:1.2rem">2,000,000KRW <font style="font-size:14px;color:rgba(255,255,255,0.8);text-align:right" lang="ko"><br>상당의 LZE Token</font></h6>
+          </div>
+          <div class="col-6 mx-auto mb-4">
+            <h5 lang="ko" class="mb-2">LYZE상</h5>
+            <h6 style="font-size:1.2rem">500,000KRW <font style="font-size:14px;color:rgba(255,255,255,0.8);text-align:right" lang="ko"><br>상당의 LZE Token</font></h6>
+          </div>
+
+        <!-- Project One Row 
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Misty</h4>
+                  <p class="mb-0 text-white-80">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two Row -->
+        <!-- 
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Mountains</h4>
+                  <p class="mb-0 text-white-80">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div -->
+
+      </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="event-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">Final Event</h2>
+            <h3 lang="ko" class="text-rr">여러분을 LYZE 챌린지 파이널 이벤트에 초대합니다.</h3>
+            <h2 lang="ko" class="sub text-white-80 mx-auto mt-2 mb-5">현직 블록체인 업계 종사자, 데이터 분석가, 투자자들과의 네트워킹까지!<br>LYZE와 함께 온체인 데이터로부터 풍부한 인사이트를 느낄 수 있는 분석 아이디어들을 만나세요.
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-md-4 mx-auto">
+            <h5 class=""><i class="far fa-calendar-check"></i><font lang="ko">날짜</font></h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">2019년 02월 15일 금요일</p>
+          </div>
+          <div class="col-3 col-md-4 mx-auto">
+            <h5 class=""><i class="far fa-clock"></i><font lang="ko">일정</font></h5>
+              <p class="text-white-80 mt-2 mb-4">05:00 PM ~ 10:00 PM</p>
+          </div>
+          <div class="col-6 col-md-4 mx-auto">
+            <h5 class=""><i class="fas fa-map-marker-alt"></i><font lang="ko">장소</font></h5>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">드림플러스 B1 Event Hall<br>서울특별시 서초구 강남대로 311</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h3 class="text-rr">Schedule</h3>
+          </div>
+          <div class="col-12 col-sm-9 mx-auto">
+              <table class="table table-dark">
+                <tbody>
+                  <tr>
+                      <th>05:00 PM</th>
+                      <td colspan="2">행사 시작</td>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <td>환영 인사</td>
+                      <td>LYZE 최재훈 대표</td>
+                  </tr>
+                  <tr>
+                      <th>05:15 PM</th>
+                      <td>Keynote 1</td>
+                      <td>FuturePlay 류중희 대표</td>
+                  </tr>
+                  <tr>
+                      <th>05:30 PM</th>
+                      <td>Keynote 2</td>
+                      <td>Nonce 하시은 대표</td>
+                  </tr>
+                  <tr>
+                      <th>05:45 PM</th>
+                      <td>Panel Talk</td>
+                      <td>TBD</td>
+                  </tr>
+                  <tr>
+                      <th>06:15 PM</th>
+                      <td colspan="2">Breaking time & Networking </td>
+                  </tr>
+                  <tr>
+                      <th>06:30 PM</th>
+                      <td>Team Pitching 1</td>
+                      <td>PT 15min, Q&A 5min</td>
+                  </tr>
+                  <tr>
+                      <th>06:50 PM</th>
+                      <td>Team Pitching 2</td>
+                      <td>PT 15min, Q&A 5min</td>
+                  </tr>
+                  <tr>
+                      <th>07:10 PM</th>
+                      <td colspan="2">Breaking time & Networking </td>
+                  </tr>
+                  <tr>
+
+                      <th>07:20 PM</th>
+                      <td>Team Pitching 3</td>
+                      <td>PT 15min, Q&A 5min</td>
+                  </tr>
+                  <tr>
+                      <th>07:40 PM</th>
+                      <td>Team Pitching 4</td>
+                      <td>PT 15min, Q&A 5min</td>
+                  </tr>
+                  <tr>
+                      <th>08:00 PM</th>
+                      <td colspan="2">Breaking time & Networking </td>
+                  </tr>
+                  <tr>
+                      <th>08:10 PM</th>
+                      <td>Partner Pitching</td>
+                      <td>PT 15min</td>
+                  </tr>
+                  <tr>
+                      <th>08:30 PM</th>
+                      <td>순위 발표 및 시상</td>
+                      <td>LYZE 최재훈 대표</td>
+                  </tr>
+                  <tr>
+                      <th>09:00 PM</th>
+                      <td colspan="2">행사 종료</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="event2" class="event2-section bg-black">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto mb-6">
+              <h3 class="text-rr" style="text-align:center">Speakers</h3>
+            </div>
+            <div class="col-12">
+              <h5 lang="ko">Keynote 1</h5>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <img class="people-pic" src="img/pic_junghee.png">
+            </div>
+            <div class="col-12 col-md-9 col-sm-6 keynote" style="padding-top:4rem;">
+              <h6 lang="ko">류중희 대표, FuturePlay<br><font style="color:var(--star)">Keynote speaker</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">류중희 박사는 한국과학기술연구원(KAIST)에서 전자전산학 관련 박사학위를 취득 후 겸임교수로 있는 중 2006년 모바일 영상인식 및 증강현실 기술회사인 올라웍스(Olaworks)를 창업하였다. 올라웍스는 2012년 인텔에 인수된 후 2014년까지 상무로 근무하였고, 퇴사 후 바로 FuturePlay를 설립하여 지금까지 지속적으로 기술기반 스타트업에 투자하고 있다.
+              </p>
+            </div>
+            <div class="col-12">
+              <h5 lang="ko">Keynote 2</h5>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <img class="people-pic" src="img/pic_nonce.png">
+            </div>
+            <div class="col-12 col-md-9 col-sm-6 keynote" style="padding-top:4rem;">
+              <h6 lang="ko">하시은 대표, Nonce<br><font style="color:var(--star)">Keynote speaker</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">하시은 이사는 암호화폐 업계로 들어오기 전에 정말 다채로운 길을 걸었다. 5개국에서 유년기를 보내면서 컴퓨터에 빠져 살았던 그는 비보잉을 접하면서 대학에서 인문학을 전공하고 힙합 블로그를 운영했고 힙합 교육에 힘을 쏟았다. 오픈 블록체인과 운명적 만남은 2017년 대한민국 최초 암호화폐 유튜브 채널 ‘블록체인ers’를 시작하는 원동력이 되었으며 ‘블록체인ers’는 블록체인 연구원, 엔지니어, 창업자가 약 50명 모여사는 ‘논스’라는 블록체인 코워킹, 코리빙 공간으로 성장하였다.
+              </p>
+            </div>
+            <div class="col-12">
+              <h5 lang="ko">Panel Talk</h5>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <img class="people-pic" src="img/pic_sungjae.png">
+              <h6 lang="ko">황성재 대표, FoundationX<br><font style="color:var(--star)">Moderator</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">세계적인 특허 전문 저널 IAM이 선정한 세계 유망 IP전략가 300인 안에 선정된 황성재 박사는 한국과학기술연구원(KAIST)에서 인간-컴퓨터 상호작용 전공으로 박사학위를 취득하였으며, 이 과정 중에 발표한 미래 스마트 기기 입력에 관한 30개 이상의 논문을 발표하였다. 또한 현재 300여건 이상의 특허를 소유하고 있다. 황성재 박사가 2015년에 공동창업한 자연어 이해 및 대화형 AI 기술에 강점을 가진 스타트업 (주)플런티는 최근 삼성전자에 인수되었다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_bitforex.png">
+              <h6 lang="ko">황재영 대표, Bitforex<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">비트포렉스는 암호화폐 시장에서 가장 빠르게 성장한 글로벌 거래소 중 하나다. 한국 법인은 암호화폐 거래소로서의 중장기 전략 수립을 담당하는 한편 국내 프로젝트 발굴에 주력하고자 한다. 서울대 법학부 출신인 황재영 대표는 IT 분야의 업무경험과 변호사로서의 활동영역을 바탕으로 안정적인 블록체인 생태계 형성을 위해 노력하고 있다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_bitsonic.png">
+              <h6 lang="ko">신진욱 대표, Bitsonic<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">고려대 산업공학과 출신인 신진욱 대표는 20년 경력의 컴퓨터 프로그래머이자 IT 시스템 보안 전문가로, 2011년 스타트업 스쿱미디어를 설립했다. 암호화폐에 관한 최고 수준의 전문성과 보안, 암호자산 기술을 확보한 스쿱미디어는 암호화폐 대중화를 표방하며, 인터넷 쇼핑처럼 누구나 손쉽게 코인과 토큰을 구매할 수 있도록 블록체인 기반 AI 자산 관리 및 배분 프로토콜을 구축한 거래소인 비트소닉을 개장여 암호화폐 시장에서 새 바람을 일으키고 있다. 
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_hexlant.png">
+              <h6 lang="ko">노진우 대표, Hexlant<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">헥슬란트 블록체인 기술연구소는 현재 노드 개발 및 연구, 서비스 개발등을 통해 전방위적인 블록체인 서비스를 제공하고있다. 연세대학교 인지심리공학 출신의 노진우 대표는 바비톡(성형외과 O2O 서비스) 스타트업 창업 멤버이자 삼성전자 연구원으로 다양한 IT 분야에 대한 경험을 가지고 있으며 2018년 아시아경제 TV 블록몬스터랩 대표로 ‘블록배틀’을 이끌었다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_huobi.png">
+              <h6 lang="ko">엘레나 강 실장, Huobi Korea<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">뉴욕시립대학교 버룩컬리지 지클린경영대학 (Baruch College's Zicklin School of Business) Finance 전공 출신의 엘레나 강은 후오비코리아  전략 기획실 실장이자 블록체인법률연구소 자문위원을 겸하고 있다. MTN 앵커, 2018 평창동계올림픽 아나운서, 한국경제 TV 외신캐스터 등 다수의 아나운서/앵커 방송 경험이 있으며, 노무라금융투자 Equity Sales Trading 부서에서 근무했었다. 이후 2018 아시아경제 TV '블록배틀'의 심사위원, 2018 Korea CEO Summit '월드블록체인서밋' 연사, 2019 UN미래포럼 'Blockchain for Sustainable Development Goals'의 연사로 활동하시며 블록체인 업계에서 다양한 인사이트를 주고 활약하고 있다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_okcoin.png">
+              <h6 lang="ko">한승준 팀장, OKCOIN<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">2013년 설립된 OKCOIN은 전 세계적으로 가장 오래된 디지털 자산 거래 플랫폼이다. 합작 회사 오케이코인코리아는 OKCOIN 거래소 다년간의 서비스 경험을 바탕으로 고속트레이딩 엔진과 확장성 높은 서버 구조 등의 인프라, 견고한 보안시스템, 리스크 메니지먼트 전문인력 등을 갖추고 있다. 미 보스톤대학교(BU) 경영학과 출신의 한승준 팀장은 전 세계 유망 프로젝트의 딜 소싱 및 마케팅/홍보 업무를 담당하고 있으며, 블록체인 업계의 건전한 발전을 위해 노력하고 있다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_hanbitco.png">
+              <h6 lang="ko">김성아 대표, 한빗코<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">한빗코 거래소는 한국 메이저 7대 거래소로 안전한 거래소로 인정받고 있다. 한빗코 김성아대표는 한국 최초 거래소 코빗 거래소 PM을 시작으로 암호화폐 트레이딩 투자회사인 ELJOVI 파트너 및 ELJOVI global fund director 그리고 한빗코 대표직까지 블록체인 업계 초기부터 블록체인 생태계와 함께해왔다. 또한 한빗코의 비전을 알리고자 ChainActionMovement 파운더로도  활동 중이다. UN SDG’s 17 Goals과 맞는 좋은 프로젝트를 장려하여 다시 한번 블록체인 생태계를 일으키기 위한 활동으로 UNOPS 및 국제기구들과도 함께 협력해 좋은 블록체인 프로젝트들을 알리는 일에 힘쓰고 있다. 국내에서는 아시아경제TV에서 방영된 블록배틀 심사위원으로도 활약한 바 있다.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6">
+              <h5 lang="ko"></h5>
+              <img class="people-pic" src="img/pic_blank.png">
+              <h6 lang="ko">(TBD)<br><font style="color:var(--star)">Panel</font></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">(TBD)
+              </p>
+            </div>
+            <div class="col-12">
+              <h5 lang="ko" style="padding-top:3rem;padding-bottom:3rem">Judges</h5>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">정태준 대표<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">클라우드브릭
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">노진우 대표<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">Hexlant
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">오현석 대표<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">디블록
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">김종호 대표<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">해치랩스
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">(TBD)<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)
+              </p>
+            </div>
+            <div class="col-4 col-md-2">
+              <h5 lang="ko"></h5>
+              <!--img class="people-pic" src="img/pic_blank.png"-->
+              <h6 lang="ko">(TBD)<br></h6>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+     <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">We all support LYZE Challenge!</h2>
+          </div>
+          <div class="col-12 mx-auto">
+            <h3 class="text-rr">Partners</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4">
+              <a href="https://www.prehavaex.com/" target="__blank">
+                <img class="company-logo small" src="img/logo_havaex.png" style="padding:1.25rem;"></a>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 하백스</p>
+          </div>
+          <div class="col-6 col-md-4">
+              <a href="https://www.bitforex.com/" target="__blank">
+                <img class="company-logo small" src="img/logo_bitforex.png"></a>
+              <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 비트포렉스</p>
+
+          </div>
+          <div class="col-6 col-md-4">
+              <a href="https://bitsonic.co.kr/" target="__blank">
+               <img class="company-logo small" src="img/logo_bitsonic.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 비트소닉</p>
+          </div>
+          <div class="col-6 col-md-4">
+              <a href="https://www.mineex.io/" target="__blank">
+               <img class="company-logo small" src="img/logo_mineex.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 마이닉스</p>
+          </div>
+          <div class="col-6 col-md-4">
+              <a href="https://www.huobi.co.kr/ko-KR/" target="__blank">
+               <img class="company-logo small" src="img/logo_huobi.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 후오비</p>
+          </div>
+          <div class="col-6 col-md-4">
+              <a href="https://www.okcoinkr.com/" target="__blank">
+               <img class="company-logo small" src="img/logo_okcoin.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 OKCOIN</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://www.hanbitco.com/" target="__blank">
+               <img class="company-logo small" src="img/logo_hanbitco.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">거래소 한빗코</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://icono1.com/" target="__blank">
+               <img class="company-logo small" src="img/logo_icono1.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">ICONo1</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://nonce.community" target="__blank">
+               <img class="company-logo small" src="img/logo_nonce.png" style="padding:1.4rem;"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">Nonce</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://hexlant.com/" target="__blank">
+               <img class="company-logo small" src="img/logo_hexlant.png" style="padding:1.3rem;"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">Hexlant</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="http://www.deblock.co.kr/" target="__blank">
+               <img class="company-logo small" src="img/logo_deblock.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">Deblock</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://haechi.io/" target="__blank">
+               <img class="company-logo small" src="img/logo_haechilabs.png" style="padding:1.3rem;"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">해치랩스</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="http://www.blocknode.co.kr/" target="__blank">
+               <img class="company-logo small" src="img/logo_blocknode.png"></a>
+               <p lang="ko" class="text-white-80 mt-2 mb-4">블록노드</p>
+          </div>
+          <div class="col-6 col-md-4">
+               <img class="company-logo small" style="object-fit:cover" src="img/pic_blank.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h3 class="text-rr">Media</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="https://blockinpress.com" target="__blank">
+               <img class="company-logo small" src="img/logo_blockinpress.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">블록인프레스</p></a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://www.coinness.com" target="__blank">
+               <img class="company-logo small" src="img/logo_coinness.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">코인니스</p></a>
+          </div>
+          <div class="col-6 col-md-4">
+            <a href="https://bctimes.co.kr/" target="__blank">
+               <img class="company-logo small" src="img/logo_blockchaintimes.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">블록체인타임즈</p></a>
+          </div>
+
+          <div class="col-6 col-md-4">
+               <img class="company-logo small" style="object-fit:cover" src="img/pic_blank.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)</p>
+          </div>
+          <div class="col-6 col-md-4">
+               <img class="company-logo small" style="object-fit:cover" src="img/pic_blank.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)</p>
+          </div>
+          <div class="col-6 col-md-4">
+               <img class="company-logo small" style="object-fit:cover" src="img/pic_blank.png">
+               <p lang="ko" class="text-white-80 mt-2 mb-4">(TBD)</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h3 class="text-rr">Join LYZE Partner</h3>
+          </div>
+          <div class="col-12 mx-auto">
+            <h2 lang="ko" class="sub text-white-80 mx-auto mt-2 mb-5">
+              LYZE와 함께 성장할 협력사를 찾습니다.<br>이번 LYZE Challenge는 물론, LYZE와의 스폰서십/파트너십을 통해 향후 LYZE 프로젝트와 함께 다방면으로 협력할 파트너가 되어주세요.
+            </h2>
+            <a href="https://goo.gl/forms/2q7PJNa4eIxZkZYz1" class="btn btn-primary js-scroll-trigger"><i class="fas fa-hands-helping"></i>SUPPORT US</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">FAQ</h2>
+          </div>
+          <div class="col-12 col-md-9 mx-auto" style="text-align:left">
+            <h5 lang="ko"> 1. 참가 조건이 있나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">암호화폐 관련 데이터 분석에 관심이 있으신 누구나 참여가 가능합니다. 온라인으로도 참가가 가능합니다.</p>
+
+            <h5 lang="ko"> 2. 참가 비용이 있나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">비용은 무료입니다.</p>
+
+            <h5 lang="ko"> 3. 팀은 어떻게 구성하나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">자유롭게 구성하셔도 무방하나, 데이터를 다뤄야 하는 만큼 기본적인 프로그래밍 능력을 갖추신 분이 포함되는 것을 추천드립니다. 참가자 신청 후 초대되는 저희 LYZE challenge Slack에서 팀원을 모집할 수 있습니다.</p>
+
+            <h5 lang="ko"> 4. 팀 인원수에는 제한이 없나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">인원 제한은 없습니다. 다만 상금을 나눠 가지시려면... ;-)</p>
+
+            <h5 lang="ko"> 5. 어떤 플랫폼과 언어를 사용해야 하나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">데이터를 분석하는 데 있어서 본인이 익숙하신 그 어떤 툴과 플랫폼을 사용하셔도 무방합니다.</p>
+
+            <h5 lang="ko"> 6. 결과 제출 양식이 있나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">분석 결과를 잘 전달할 수 있는 발표 형식(PPT, Keynote 등) 의 자료로 제출해주시면 됩니다. 다만, 분석과정과 관련된 산출물(proofs in appendix)들은 별도로 첨부해주셔야 합니다.</p>
+
+            <h5 lang="ko"> 7. 심사 기준은 어떻게 되나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">팀의 프로젝트 창의적인 분석 기법(분석력), 분석 과정의 신뢰성 및 재현성, 분석 내용의 효과적인 전달을 위한 시각화 표현력을 검토합니다. 분석 주제는 블록체인 생태계에 도움이 되는 건강한 주제를 권장드립니다. 자세한 내용은 본 홈페이지 “RULES” 메뉴에서 확인하실 수 있습니다. </p>
+
+            <h5 lang="ko"> 8. 심사 방식은 어떻게 되나요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">피칭데이 이전 내부 심사를 거쳐, 입상 4팀을 선별합니다. 1위, 2위, 3위는 피칭데이 현장에서 심사위원 심사와 현장 투표로 결정됩니다. 자세한 내용은 본 홈페이지 “RULES” 메뉴에서 확인하실 수 있습니다. </p>
+
+            <h5 lang="ko"> 9. 피칭데이는 모두 참석 가능한가요?</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4">그럼요. 피칭데이는 참가자, 비참가자 무관하게 모두 참석하실 수 있습니다. 분석 결과물 발표 기회는 입상 4팀에게만 주어집니다.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-black text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            <h2 class="title text-white my-6">Contact</h2>
+          </div>
+        
+          <div class="col-12 col-md-3 mx-auto mb-3">
+            <h3 lang="ko" class="text-rr" style="text-align:left;">LYZE Challenge<br>관련 문의</h3>
+          </div>
+          <div class="col-12 col-md-9 mx-auto">
+            <h5 lang="ko" style="text-align:left;">챌린지 참가자</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-4" style="text-align:left;">
+              참가자 분들은 참가 신청 시 초대되는 LYZE Challenge Slack에서 실시간 문의가 가능합니다.
+            </p>
+            <h5 lang="ko" style="text-align:left;">챌린지 비참가자</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-2" style="text-align:left;">
+              Challenge 관련 문의는 하단의 이메일로 문의사항을 보내주시면 신속하게 답변드리겠습니다.
+            </p>
+            <a class="btn mt-2 mb-4" href="mailto:contact@lyze.ai?subject=[LYZE%20Challenge]&cc=minju@lyze.ai;community@lyze.ai" target="__blank">
+              <i class="fas fa-envelope"></i>contact@lyze.ai
+            </a>
+          </div>
+        </div>
+        <div class="row">
+           <div class="col-12 col-md-3 mx-auto mb-3">
+            <h3  lang="ko" class="text-rr" style="text-align:left;">LYZE 관련 문의</h3>
+          </div>
+          <div class="col-12 col-md-9 mx-auto">
+            <h5 style="text-align:left;">LYZE Community Channels</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-2" style="text-align:left;">
+              LYZE에서는 다음과 같이 커뮤니케이션 채널을 운영 중입니다.
+            </p>
+            <a class="btn my-2 mx-2" href="https://open.kakao.com/o/gLRyzl5" target="__blank"><i class="fas fa-comment"></i>KAKAO</a>
+            <a class="btn my-2 mx-2" href="https://t.me/lyzeofficial" target="__blank"><i class="fab fa-telegram-plane"></i>Telegram Notice</a>
+            <a class="btn my-2 mx-2" href="https://t.me/lyzeofficial_talk" target="__blank"><i class="fab fa-telegram-plane"></i>Telegram Talk</a>
+            <a class="btn my-2 mx-2" href="https://t.me/lyzeofficial_research" target="__blank"><i class="fab fa-telegram-plane"></i>Telegram Research</a>
+            <h5 class="mt-4" style="text-align:left;">LYZE Official Webpage</h5>
+            <p lang="ko" class="text-white-80 mt-2 mb-2" style="text-align:left;">
+              공식 홈페이지에서 LYZE의 소개 및 Whitepaper, 정기 발간 Research Report를 확인하실 수 있습니다.
+            </p>
+            <a class="btn mt-2 mb-4 mx-2" href="https://lyze.ai" target="__blank"><i class="fas fa-mouse-pointer"></i>LYZE.AI</a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="small text-center text-white-80">
+      <div class="container">
+      
+         <div class="col-12 mb-6 social d-flex justify-content-center">
+          <a href="https://medium.com/@lyze" class="mx-2" target="__blank">
+            <i class="fab fa-medium-m"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/lyze-labs-inc/" class="mx-2" target="__blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://t.me/lyzeofficial" class="mx-2" target="__blank">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a href="https://twitter.com/LyzeOfficial" class="mx-2" target="__blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="mx-2" target="__blank">
+            <i class="fab fa-weixin"></i>
+          </a>
+          <a href="#" class="mx-2" target="__blank">
+            <i class="fas fa-comment"></i>
+          </a>
+        </div>
+          Copyright &copy; 2019 LYZE Pte. Ltd.
+          <br>
+          <font color="#222">Designed by Minju Lee</font>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+    <!-- Language -->
+    <script src="js/lang.js"></script>
+
+  </body>
+
+</html>
