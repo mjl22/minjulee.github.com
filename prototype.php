@@ -6,4 +6,4 @@ $changes_in_frame = '.header--header--3d0kA, .header--headerClear--14eAa, .heade
 $frame_content = str_replace('</style>', $changes_in_frame, $frame_content);
 
 echo $frame_content;
-?>
+?> 
