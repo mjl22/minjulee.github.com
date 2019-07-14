@@ -240,9 +240,7 @@ max-width: 570px;
 height: calc(900vw / 16);
 max-height: calc(570px*9/16);
 }
-.header--header--3d0kA, .header--headerClear--14eAa, .header--headerDark--2JGe3{
-	display:none;
-}
+.header--header--3d0kA, .header--headerClear--14eAa, .header--headerDark--2JGe3 { display:none; }
 /*--Footer--*/
 footer {
 	padding: 1rem 0%;
