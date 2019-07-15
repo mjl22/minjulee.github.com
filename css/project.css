@@ -94,20 +94,20 @@ section span.item{
 	padding-top:1rem;
 }
 section p.post a{
-	border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 	-webkit-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 
 }
 section p.post a:hover{
-	background-color: rgba(255, 255, 255, 0.2);
-	border-bottom: 3px solid rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 figure{
 	margin:2rem auto 4rem;
 }
 section {
-	padding:2rem 0rem 0rem 0rem !important;
+	padding:5rem 0rem 0rem 0rem !important;
 	margin-top:2rem;
 }
 main .overview{

@@ -23,7 +23,7 @@
   <!-- Custom styles for this template -->
   <link href="css/hello.css" rel="stylesheet">
   <link href="css/project.css" rel="stylesheet">
-
+  <link href="css/responsive.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.png" />
 </head>
@@ -140,58 +140,60 @@
             <div class="navbar-collapse collapse" id="navbarResponsive" style="">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">Strategy</a>
+                  <a class="nav-link js-scroll-trigger" href="#01">Strategy</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger active" href="#rules">Scope</a>
+                  <a class="nav-link js-scroll-trigger active" href="#02">Scope</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#event">Structures</a>
+                  <a class="nav-link js-scroll-trigger" href="#03">Structures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#sponsors">Skeleton</a>
+                  <a class="nav-link js-scroll-trigger" href="#04">Skeleton</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#faq">Surface</a>
+                  <a class="nav-link js-scroll-trigger" href="#05">Surface</a>
                 </li>
-                <li class="nav-item" style="text-align:center; margin-bottom:0rem !important;">
+                <li class="nav-item divider">
                   * * *</li>
-                <li class="nav-item" style="margin-top:0.5rem !important;">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Takeaway</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#06">Takeaway</a>
                 </li>
               </ul>
             </div>
           </nav>
         </div class="container">
         <div class="iframe__group">
+          <!--div class="loading" id="loading">
+            <img class="loading__blur" src="img/blurr_1-a.png" />
+            <span>Loading...</span>
+          </div>
+          <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+          <script>
+            //When the page has loaded.
+            $( document ).ready(function(){
+                   $('#loading').delay(7000).fadeOut();
+            });
+          </script -->
           <div class="iframe__overlay top"></div>
-          <div class="iframe__overlay bottom"></div>
           <iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIdrnB22zcR9R7mDqRX6rcYnS%2FUntitled%3Fnode-id%3D1%253A2%26viewport%3D138%252C272%252C0.10172070562839508%26scaling%3Dscale-down" allowfullscreen></iframe>
+          <div class="iframe__overlay bottom"></div>
+          <div class="iframe__underlay"></div>
         </div>
         <div class="container">
+          <h6 class="title mt-3 mb-4">Background</h6>
+          <p class="post mb-4 pt-1">
+            As the mobile-first experience becomes familiar and dominant to users,
+            the importance of TV media devices and user loyalty or reliance goes relatively low.
+            The experience of contents consumption on mobile is also naturally reflected in TV.
+            Namely, TV started to contain contents which have been consumed through mobile.
+            Therefore we were able to find out that user controllability of TV contents
+            was expanded by providing real-time, possible to archive and interactive features together.
+          </p>
             <section id="01" class="col-12">
-              <h6 class="title mt-3 mb-4">
-                Discover - User and Market Research</h6>
-              <span class="item">TV started to contain contents which have been consumed through mobile</span>
+              <h4 class="title mt-3 mb-4">Strategy</h4>
+              <h6 class="title mt-3 mb-4">Determining scope of user needs through user and market research</h6>
               <p class="post mb-4 pt-1">
-                As the mobile first experience becomes familiar and dominant to users,
-                the importance of TV media devices and user loyalty or reliance goes relatively low.
-                The experience of contents consumption on mobile is also naturally reflected in TV.
-                Therefore we were able to find out that user controllability of TV contents
-                was expanded by providing real-time, possible to archive and interactive features together.
-              </p>
-              <figure class="">
-                <img class="" src="/img/" />
-              </figure>
-              <span class="item">A fox with a bottleneck</span>
-              <p class="post pt-1 mb-2">
-                But only with changing the content itself and changing the way
-                it is delivered users can't expect they would get a proper user experience.
-                We should take into account the characteristics of the media
-                and the context of media usage so that we can define
-                the structure of the user experience in a clever way.
-              </p>
-              <p class="post mb-4">
                 In order to understand how the content consumption experience are occurred,
                 contextual interview and <a href="https://www.nngroup.com/articles/diary-studies/" target="_blank">
                 diary studies</a> were conducted targeting for smart TV users and set-top box users
@@ -199,25 +201,37 @@
                 to picture out general and contextual behaviors of users so I could discover the meaning
                 of TV itself in its environment as well as the direction of the way its experience structure should follow.
               </p>
-              <span class="item pl-5">1. Lean-forward Users</span>
-              <p class="post pl-5 pt-1 mb-2">
+              <span class="item">1. Targeting to Lean-forward Users</span>
+              <p class="post pt-1 mb-2">
                 Our first discovery was TV users now have active and passionate about
-                what they want to do with TV, called 'Lean-forward Users'.
-
-                The range and amount of content that TV can contain
-                have certainly expanded. Lean-forward experience means
-                that the viewer's attitude leans toward the TV rather
-                than the leaned back. This means that users are actively doing something
+                what they want to do with TV, called 'Lean-forward Users'. This means that users are actively doing something
                 like <i>searching</i> for keywords, <i>browsing</i> categories, or <i>storing</i> content.
                 However, while the content that TV can hold has expanded,
                 the way of dealing with the content has not been followed up yet,
                 so the users were feeling inconvenience, which is shown in the next discovery.
               </p>
+              <span class="item">2. 유저가 행동의 결과를 미리 예측할 수 있게 하기</span>
+              <p class="post pt-1 mb-2">
+                올바른 UX의 원칙 중 하나는 사용자가 어떤 행동을 취했을 때 그 예상과 기대에 부응하는 결과가 적절하게 present되는 것이어야 한다.
+                이를 TV UX에 비추어 보았을 때, 무엇보다도 "사용자가 원하는 컨텐츠를 play하기"가 key behavior일 것이며, 이것을 목적으로 삼아
+                모든 인터랙션 프로세스와 그 결과가 사용자의 콘텍스트에 맞게 주어지도록 답을 제시하는 것이 필요하다. 이를 위해 직관적이고, 효율적인 경험 루트로서 우리는
+                사용자가 원하는 목표를 효율적으로 도달시켜주기 위한 루트를 직관적이고, 논리적으로 설계한다.
+              </p>
+              <span class="item">3. TV가 놓여진 환경을 생각하기</span>
+              <p class="post pt-1 mb-2">
+                다른 디지털 디바이스와의 가장 큰 차이점이 있다면 TV의 위치이다. 우리는 사용자 연구를 통해 사람들이 TV에 대해 갖는 정서적 존재감이 다른 디바이스와 특별히
+                차이가 있다는 것을 배웠고, 이는 UX설계의 전략을 짜는 데 있어 중요한 포인트가 될 수 있었다. 대개 TV는 리빙룸 한 가운데 위치해서 거실에서 일어나는 많은 활동의 주축이 된다.
+                재생하는 콘텐츠에 따라 거실은 Comedy Theater, Movie theater, or even a gym or class 가 될 수 있다. 생활의 분위기를 담당하고 있는 TV에서
+                사용자가 원하는 것 그리고 원하는 것을 넘어서 기대하게 만드는 서비스를 고려해야할 것이다. 또한 차별적인 소비경험을 위한 TV UX language로
+                모바일에서의 영상 소비 경험과의 차별성을 부각 시키기 위해 TV가 갖는 고유의 경험 문법을 정의해야 한다.
+              </p>
             </section>
             <section id="02" class="col-12">
-              <h4 class="title mt-3 mb-4">Research</h4>
+              <h4 class="title mt-3 mb-4">Scope</h4>
+              <h6 class="title mt-3 mb-4">Defining service features and content requirements</h6>
+              <span class="item">1. Accessibility of contents</span>
               <p class="mb-3">
-                기존에 TV에서 소구되던 콘텐츠들이 다양한 contents app이 범람함에 따라 대부분 모바일 경험으로 흡수되었다. 우리의 lifestyle 안에서 가장 오래 된 buddy 였던 media, TV는 그 역할이 단순한 액자 프레임이 된 것처럼 우
+                콘텐츠 분류가
               </p>
             </section>
             <section id="03" class="col-12">
