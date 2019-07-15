@@ -104,7 +104,17 @@ section p.post a:hover{
 	border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 figure{
-	margin:2rem auto 4rem;
+	margin:2rem autos;
+}
+figure img{
+	width: 100%;
+	background-color: rgba(255,255,255,0.1);
+}
+figure span{
+	font-size: 12px;
+	text-align: center;
+	margin: 0.5rem auto;
+	display: block;
 }
 section {
 	padding:5rem 0rem 0rem 0rem !important;
