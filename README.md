@@ -1,2 +1,0 @@
-# xxminjulee.github.com
-Portfolio
