@@ -20,34 +20,40 @@
      <img class="bg" src="gif/MK_mag_bg.png" />
      <img class="web" src="gif/MK_mag_web.gif" />
      <img class="mob" src="gif/MK_mag_mob.gif" />
+     <img class="menu" src="gif/menu.jpg" />
    </div>
    <style>
-
-   img.bg, img.web, img.mob{
-     position:absolute;
+   body{
+     overflow-x:hidden;
+     overflow-y:hidden;
    }
-   .group{
-     width:2325px;
-     height:1080px;
+   img.bg, img.web, img.mob, img.menu{
+     position:absolute;
    }
    img.bg{
      top:0;
      left:0;
-     width:2325px;
-     height:1080px;
+     width:100vw;
+     height:auto;
      z-index:999;
    }
    img.web{
-     top: 140px;
-      left: 270px;
-      width: 1249px;
-      height: 801px;
+     top: 6vw;
+    left: 11.6vw;
+    width: 53.8vw;
+    height: auto;
+   }
+   img.menu{
+     top: calc(6vw + 31.75vw);
+     left:71.2vw;
+     width:17.21vw;
+     height:auto;
    }
    img.mob{
-     top: 140px;
- right: 414px;
- width: 397px;
- height: 801px;
+      top: 6vw;
+      left:71.2vw;
+      width: 17.21vw;
+      height: auto;
    }
    </style>
  </body>
